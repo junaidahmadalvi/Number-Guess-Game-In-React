@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { useState } from "react";
+import "./App.css";
+// import { Welcome } from "./welcome";
+import NumberGuessGame from "./numberGuessGame";
 
 function App() {
+  // // Initialize name state with an empty string
+  // const [name, changeName] = useState("");
+
+  // const changeHandler = (e) => {
+  //   // Use e.target.value to get the input value
+  //   const newName = document.getElementById("userName").value;
+  //   console.log(newName, "newName");
+  //   changeName(newName);
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NumberGuessGame />
+      {/* <center>
+        <h1>States</h1>
+      </center>
+
+      <input
+        type="text"
+        value={name} // Bind the input value to the state variable
+        id="userName"
+        onChange={changeHandler} // Use onChange to track input changes
+      />
+      <button type="button" onClick={changeHandler}>
+        submit
+      </button>
+      <Welcome firstName={"Junaid"} lastName={"Ahmad"} />
+      <Welcome firstName={"Hasaan"} lastName={"Ahmad"} />
+      <Welcome firstName={name} />
+      <p>end</p> */}
+    </>
   );
 }
 
